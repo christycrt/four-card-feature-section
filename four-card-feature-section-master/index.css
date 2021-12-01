@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-grayish-blue: hsl(227, 19%, 81%);
+
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 80px 0 80px 0;
+}
+
+main {
+    width: 320px;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.all-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.title1 {
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: var(--very-dark-blue);
+    margin-bottom: 1.3rem
+}
+
+.title2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--very-dark-blue);
+}
+
+.card {
+    background-color: var(--white);
+    box-shadow: 0 10px 30px var(--light-grayish-blue);
+    margin-bottom: 1.5rem;
+    padding: 1.7rem 1.6rem;
+    border-radius: 8px;
+    height: auto;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card p {
+    margin-bottom: 2rem;
+}
+
+.cyan-card {
+    border-top: 5px solid var(--cyan);
+}
+
+.red-card {
+    border-top: 5px solid var(--red);
+}
+
+.orange-card {
+    border-top: 5px solid var(--orange);
+}
+
+.blue-card {
+    border-top: 5px solid var(--blue);
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 1080px;
+    }
+
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+
+    }
+
+    .card-left-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .description {
+        width: 500px;
+        display: flex;
+        margin: auto;
+    }
+
+    .title1 {
+        font-size: 2.5rem;
+    }
+
+    .title2 {
+        font-size: 2.5rem;
+    }
+}
